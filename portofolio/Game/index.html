@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- the icon displayed on the browser tab -->
+    <link rel="icon" type="image/png" href="images/butterfly.png" />
+    <title>XI TJKT 2</title>
+    <!-- link to the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- background element for the game -->
+    <div class="background"></div>
+    <!-- the butterfly image that will be controlled in the game -->
+    <img
+      src="images/butterfly.png"
+      alt="Butterfly"
+      class="butterfly"
+      id="butterfly-1"
+    />
+    <!-- message displayed to instruct the player on how to start the game -->
+    <div class="message">
+      Enter Untuk Start Game
+      <p>
+        <span style="color: red">&uarr;</span> Tekan Tombol Spasi Untuk Terbang
+      </p>
+    </div>
+    <!-- score display -->
+    <div class="score">
+      <span class="score_title">Score : </span>
+      <span class="score_val">0</span>
+    </div>
+    <!-- link to the external JavaScript file for the game logic -->
+    <script src="script.js"></script>
+  </body>
+</html>

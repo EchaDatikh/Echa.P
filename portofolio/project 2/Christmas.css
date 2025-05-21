@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url('C.jpg'); /* Pastikan file-nya ada */
+  background-size: cover;         /* Mengisi seluruh layar */
+  background-repeat: no-repeat;   /* Tidak diulang */
+  background-position: center center; /* Posisinya di tengah */
+  background-attachment: fixed;   /* Agar background tetap di tempat saat discroll */
+  height: 100vh;                  /* Pastikan tinggi minimum satu layar penuh */
+  width: 100vw;                   /* Lebar penuh */
+  overflow: hidden;              /* Menghindari scroll horizontal */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #ecbbe4, #bbc0fc); /* Gradasi ungu ke biru */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #e0e8ff;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e0e8ff;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #727bfc;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .dropdown-item {
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #ffffff;
+  color: #4d59ff;
+}
+
+.navbar-toggler {
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,0.9)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.form-control {
+  border: 2px solid #8c8fc2;
+  border-radius: 30px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #c496d6;
+  box-shadow: none;
+}
+
+.btn-outline-success {
+  color: #fff;
+  border-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #fff;
+  color: #4d59ff;
+  border-color: #fff;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .form-control {
+    margin-bottom: 10px;
+  }
+}
+
+.container {
+  height: 450px;
+  width: 600px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.card {
+  position: absolute;
+  height: 300px;
+  width: 550px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  overflow: hidden;
+}
+.card img {
+  position: absolute;
+  width: 300px;
+  filter: drop-shadow(0 0 20px rgba(26, 0, 68, 0.34));
+  bottom: 0;
+  left: 120px;
+  transition: 0.5s;
+}
+.text-container {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  width: 250px;
+  right: -250px;
+  transition: 0.5s;
+}
+.card h2 {
+  color: #1f0b50;
+  text-transform: uppercase;
+}
+.card p {
+  font-weight: 300;
+  text-align: justify;
+  color: #261844;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+}
+.card:hover img {
+  width: 250px;
+  left: 15px;
+  bottom: 20px;
+}
+.card:hover .text-container {
+  right: 15px;
+}
+
